@@ -1,18 +1,40 @@
-import type { Config } from "tailwindcss";
+import prose from "@tailwindcss/typography";
+import fluid, { extract, fontSize, screens } from "fluid-tailwind";
 
-export default {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+import {
+  borderWidth,
+  colors,
+  container,
+  files,
+  fontFamily,
+  skeleton,
+  animation,
+  keyframes,
+  scrollbar,
+  typography,
+  gridset,
+  rotating,
+} from "./packages/tailwind";
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: {
+    files,
+    extract,
+  },
   theme: {
+    screens,
+    colors,
+    fontSize,
+    container,
+    typography,
+    borderWidth,
+    // textShadow,
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+      fontFamily,
+      keyframes,
+      animation,
     },
   },
-  plugins: [],
-} satisfies Config;
+  plugins: [fluid, scrollbar, prose, gridset, skeleton, rotating],
+};

@@ -70,6 +70,8 @@ export function Navbar() {
           variant='outline'
           className='font-jakarta'
           fz={14}
+          component={Link}
+          href={PAGES.LOGIN}
         >
           Login
         </Button>
@@ -117,7 +119,15 @@ export function Navbar() {
             <NavItem item={{ label: "Blog", path: PAGES.BLOG }} />
             <NavItem item={{ label: "Donate", path: PAGES.DONATE }} />
             <NavItem item={{ label: "Contact", path: PAGES.CONTACT }} />
-            <Button size='sm' color='gray' variant='outline'>
+            <Button
+              size='sm'
+              color='gray'
+              variant='outline'
+              className='font-jakarta'
+              fz={14}
+              component={Link}
+              href={PAGES.LOGIN}
+            >
               Login
             </Button>
           </Stack>

@@ -10,7 +10,7 @@ export enum TOKEN {
 export enum APP {
   TOKEN = "tKn",
   USER_TYPE = "uType",
-  USERNAME = "uNme",
+  EMAIL = "eMail",
   USER_ID = "uID",
 }
 

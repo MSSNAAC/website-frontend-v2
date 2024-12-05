@@ -1,4 +1,6 @@
-export function MSSNLogo() {
+import { SVGProps } from "react";
+
+export function MSSNLogo({ ...props }: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width='40'
@@ -7,6 +9,7 @@ export function MSSNLogo() {
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
       xmlnsXlink='http://www.w3.org/1999/xlink'
+      {...props}
     >
       <rect
         y='0.899994'

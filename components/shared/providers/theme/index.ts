@@ -9,9 +9,9 @@ export const theme = mergeThemeOverrides(mantineTheme, {
     light: 9,
     dark: 6,
   },
-  fontFamily: `'DMSans', ${DEFAULT_THEME.fontFamily}`,
+  fontFamily: `'Roslindale','Plus_Jakarta_Sans', ${DEFAULT_THEME.fontFamily}`,
   headings: {
-    fontFamily: "'DMSans', sans-serif",
+    fontFamily: "'Roslindale','Plus_Jakarta_Sans', sans-serif",
   },
   lineHeights: {
     xs: "1.00",

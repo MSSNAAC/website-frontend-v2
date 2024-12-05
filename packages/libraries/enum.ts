@@ -23,6 +23,11 @@ export enum USER_TYPE {
 export enum PAGES {
   WEBSITE = "/",
   DASHBOARD = "/dashboard",
+  ABOUT = "/about",
+  BRANCHES = "/branches",
+  BLOG = "/blog",
+  DONATE = "/donate",
+  CONTACT = "/contact",
   LOGIN = "/login",
   NOT_FOUND = "/404",
 }

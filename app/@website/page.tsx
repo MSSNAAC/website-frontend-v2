@@ -1,5 +1,10 @@
-import { Text } from "@mantine/core";
+import { Navbar } from "@/components/website/navbar";
+import { Fragment } from "react";
 
 export default function Home() {
-  return <Text>Home</Text>;
+  return (
+    <Fragment>
+      <Navbar />
+    </Fragment>
+  );
 }

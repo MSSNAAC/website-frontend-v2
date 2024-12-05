@@ -7,16 +7,34 @@
 'wght' (range from 200.0 to 700.0
 */
 @font-face {
-  font-family: "DMSans";
-  src: url("./DM_Sans/DMSans-VariableFont_opsz\,wght.ttf") format("truetype");
+  font-family: "Roslindale";
+  src: url("./roslindale/RoslindaleVariable-VF-Testing.ttf") format("truetype");
   font-weight: 200 400 500 700;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "DMSans";
-  src: url("./DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf")
+  font-family: "Roslindale";
+  src: url("./roslindale/RoslindaleVariable-VF[Display]-Testing.ttf")
+    format("truetype");
+  font-weight: 200 400 500 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Plus_Jakarta_Sans";
+  src: url("./Plus_Jakarta_Sans//PlusJakartaSans-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 200 400 500 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Plus_Jakarta_Sans";
+  src: url("./Plus_Jakarta_Sans//PlusJakartaSans-Italic-VariableFont_wght.ttf")
     format("truetype");
   font-weight: 200 400 500 700;
   font-display: swap;

@@ -1,4 +1,4 @@
-import type { MantineColors } from "@idss/theme";
+import type { MantineColors } from "@/packages/theme";
 import { MantineColorsTuple } from "@mantine/core";
 
 declare module "@mantine/core" {

@@ -1,13 +1,11 @@
-"use client";
-
-import { ReactNode } from "react";
-import { ThemeProvider } from "next-themes";
-import { theme } from "../theme";
 import {
-  MantineProvider,
   ColorSchemeScript,
   DirectionProvider,
+  MantineProvider,
 } from "@mantine/core";
+import { ThemeProvider } from "next-themes";
+import { ReactNode } from "react";
+import { theme } from "../theme";
 
 interface MantineProviderProps {
   children: ReactNode;
@@ -15,7 +13,7 @@ interface MantineProviderProps {
 
 export function CustomMantineProvider({ children }: MantineProviderProps) {
   return (
-    <ThemeProvider defaultTheme='light' attribute='class'>
+    <ThemeProvider defaultTheme='system' attribute='class'>
       <ColorSchemeScript defaultColorScheme='light' />
       {/*
         MantineProvider is a context provider that manages theme state

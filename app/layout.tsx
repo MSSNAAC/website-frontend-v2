@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
-import { PropsWithChildren } from "react";
 import { Providers } from "@/components/shared/providers";
+import { PropsWithChildren, ReactNode } from "react";
 
 import "@mantine/core/styles.layer.css";
 import "@mantine/dates/styles.layer.css";
@@ -9,22 +9,43 @@ import "@mantine/spotlight/styles.layer.css";
 
 import "react-toastify/dist/ReactToastify.css";
 
+import { getUserType } from "@/packages/actions";
+import { USER_TYPE } from "@/packages/libraries";
+import "@/packages/variables/index.css";
 import "@/styles/accent.scss";
 import "@/styles/index.css";
-import "@/packages/variables/index.css";
-
-type LayoutProps = PropsWithChildren<{}>;
 
 export const metadata: Metadata = {
   title: "MSSN Akinyele Area Council",
 };
 
-export default async function RootLayout({ children }: LayoutProps) {
+type LayoutProps = PropsWithChildren<{
+  website: ReactNode;
+  admin: ReactNode;
+}>;
+
+export default async function RootLayout({
+  children,
+  website,
+  admin,
+}: LayoutProps) {
+  const userType = await getUserType();
+
+  const view: Record<PropertyKey, ReactNode> = {
+    [USER_TYPE.ADMIN]: admin,
+    [USER_TYPE.GUEST]: website,
+  };
+
   return (
     <html lang='en'>
       <body>
         <main className='scrollbar-none'>
-          <Providers>{children}</Providers>
+          <Providers>
+            <div className='flex h-full'>
+              {children}
+              {view[userType]}
+            </div>
+          </Providers>
         </main>
       </body>
     </html>

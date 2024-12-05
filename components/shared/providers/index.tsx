@@ -1,11 +1,12 @@
 "use client";
 
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
-import { ReactQueryProvider } from "./tanstack/react-query";
-import { CustomMantineProvider } from "./mantine";
-import { FavIcon } from "./favicon";
 import { Bounce, ToastContainer } from "react-toastify";
+import { FavIcon } from "./favicon";
+import { CustomMantineProvider } from "./mantine";
+import { ReactQueryProvider } from "./tanstack/react-query";
+
 import NextTopLoader from "nextjs-toploader";
 
 interface ProvidersProps {
@@ -18,7 +19,7 @@ export function Providers({ children }: ProvidersProps) {
       <FavIcon />
       <NextTopLoader
         showSpinner={false}
-        color='var(--blue-7)'
+        color='var(--green-7)'
         height={4}
         crawlSpeed={500}
       />

@@ -49,12 +49,11 @@ import tabs from "./tabs.module.css";
 import textInput from "./text-input.module.css";
 import textarea from "./textarea.module.css";
 import timeInput from "./time-input.module.css";
-import {
-  ArrowDownIcon,
-  CalenderIcon,
-  CancelCircleIcon,
-  ClockIcon,
-} from "@/icons";
+
+import { ArrowDownIcon } from "@/icons/arrow-down";
+import { CalenderIcon } from "@/icons/calender";
+import { CancelCircleIcon } from "@/icons/cancel-circle";
+import { ClockIcon } from "@/icons/clock";
 
 export const components: MantineThemeComponents = {
   InputWrapper: InputWrapper.extend({

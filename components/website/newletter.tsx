@@ -58,10 +58,14 @@ export function Newsletter() {
         c='white'
         mt={10}
         gap={30}
-        mih={350}
+        mih={450}
         style={{ zIndex: 2 }}
       >
-        <Title order={2} className='prose-3xl/bold sm:prose-4xl/bold'>
+        <Title
+          order={2}
+          className='prose-3xl/bold sm:prose-5xl/bold'
+          style={{ letterSpacing: "0.1em" }}
+        >
           MSSNAAC NEWSLETTER
         </Title>
 

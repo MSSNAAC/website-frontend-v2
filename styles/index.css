@@ -10,6 +10,24 @@
   }
 }
 
+@keyframes colorCycle {
+  0% {
+    color: var(--accent-10);
+  }
+  25% {
+    color: var(--accent-8);
+  }
+  50% {
+    color: var(--accent-8);
+  }
+  75% {
+    color: var(--accent-9);
+  }
+  100% {
+    color: var(--accent-10);
+  }
+}
+
 * {
   scroll-behavior: smooth;
 }

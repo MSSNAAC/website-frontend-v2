@@ -3,30 +3,55 @@
 import { MSSNLogo } from "@/icons/mssn-logo";
 import { PAGES } from "@/packages/libraries";
 import { Burger, Button, Flex, Popover, Stack, Title } from "@mantine/core";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
+import clsx from "clsx";
 import Link from "next/link";
 import NavItem from "./nav-item";
 
 export function Navbar() {
   const [opened, toggle] = useState(false);
 
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      if (scrollTop + windowHeight >= documentHeight) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <Flex
       component='header'
-      className='w-full rounded-full'
+      className={clsx("w-full rounded-full", {
+        // "translate-y-0": isVisible,
+        // "hidden -translate-y-full": !isVisible,
+      })}
       justify={{ base: "space-evenly", lg: "space-between" }}
       align='center'
+      top={25}
       pos='sticky'
-      top={0}
       mx='auto'
       maw={900}
-      my={30}
       mih={65}
       style={{
         backdropFilter: "blur(8px)",
         WebkitBackdropFilter: "blur(8px)",
-        backgroundColor: "rgba(245, 245, 245, 0.8)",
+        backgroundColor: "rgba(245, 245, 245, 0.7)",
         zIndex: 1000,
       }}
     >
@@ -110,19 +135,18 @@ export function Navbar() {
         </Popover.Target>
 
         <Popover.Dropdown
-          className='border rounded-lg shadow-2xl border-primary-border-light '
+          className='border rounded-lg shadow-2xl border-primary-border-subtle '
           miw={300}
         >
-          <Stack gap={12} py={16} px={20}>
+          <Stack gap={12} py={10}>
             <NavItem item={{ label: "About", path: PAGES.ABOUT }} />
             <NavItem item={{ label: "Branches", path: PAGES.BRANCHES }} />
             <NavItem item={{ label: "Blog", path: PAGES.BLOG }} />
             <NavItem item={{ label: "Donate", path: PAGES.DONATE }} />
             <NavItem item={{ label: "Contact", path: PAGES.CONTACT }} />
             <Button
+              mt={10}
               size='sm'
-              color='gray'
-              variant='outline'
               className='font-jakarta'
               fz={14}
               component={Link}

@@ -30,6 +30,13 @@ export enum PAGES {
   CONTACT = "/contact",
   LOGIN = "/login",
   NOT_FOUND = "/404",
+  PHOTO_GALLERY = "/photo-gallery",
+  PROJECTS = "/projects",
+  DOWNLOADS = "/downloads",
+  VOLUNTEER = "/volunteer",
+  FAQS = "/faqs",
+  PRIVACY_POLICY = "/privacy-policy",
+  PRESS = "/press",
 }
 
 export enum MODALS {}

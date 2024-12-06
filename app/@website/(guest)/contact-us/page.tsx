@@ -1,5 +1,5 @@
-import { Text } from "@mantine/core";
+import { UnderConstruction } from "@/components/shared/interface/under-construction";
 
 export default function ContactUs() {
-  return <Text>ContactUs</Text>;
+  return <UnderConstruction />;
 }

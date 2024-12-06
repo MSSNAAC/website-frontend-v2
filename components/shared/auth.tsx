@@ -37,7 +37,7 @@ export function Auth({ children }: AuthProps) {
           mih={550}
           className='w-full rounded-3xl px-5 py-10 sm:px-10'
         >
-          <Flex justify='center'>
+          <Flex justify='center' className='cursor-pointer'>
             <MSSNLogo width={70} height={70} />
           </Flex>
 

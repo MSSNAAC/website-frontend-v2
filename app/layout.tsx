@@ -41,7 +41,7 @@ export default async function RootLayout({
       <body>
         <main className='scrollbar-none'>
           <Providers>
-            <div className='flex h-full'>
+            <div className='flex h-full flex-col'>
               {children}
               {view[userType]}
             </div>

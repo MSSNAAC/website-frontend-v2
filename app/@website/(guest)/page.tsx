@@ -1,10 +1,5 @@
-import { Navbar } from "@/components/website/navbar";
-import { Fragment } from "react";
+import { UnderConstruction } from "@/components/shared/interface/under-construction";
 
 export default function Home() {
-  return (
-    <Fragment>
-      <Navbar />
-    </Fragment>
-  );
+  return <UnderConstruction />;
 }

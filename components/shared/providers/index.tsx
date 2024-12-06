@@ -19,7 +19,7 @@ export function Providers({ children }: ProvidersProps) {
       <FavIcon />
       <NextTopLoader
         showSpinner={false}
-        color='var(--green-7)'
+        color='var(--accent-10)'
         height={4}
         crawlSpeed={500}
       />

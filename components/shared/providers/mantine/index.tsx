@@ -4,7 +4,7 @@ import {
   MantineProvider,
 } from "@mantine/core";
 import { ThemeProvider } from "next-themes";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { theme } from "../theme";
 
 interface MantineProviderProps {

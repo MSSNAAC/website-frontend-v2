@@ -1,6 +1,6 @@
 import plugin from "tailwindcss/plugin";
 
-export const scrollbar = plugin(function ({ addUtilities }) {
+export const scrollbar = plugin(({ addUtilities }) => {
   addUtilities({
     ".scrollbar": {
       "&-none": {

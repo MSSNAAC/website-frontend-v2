@@ -1,5 +1,5 @@
 import { Picture } from "../picture";
-import { BoxProps, Flex, FlexProps, StackProps } from "@mantine/core";
+import { BoxProps, Flex, type FlexProps, StackProps } from "@mantine/core";
 
 interface EmblemProps extends FlexProps {
   image?: string;

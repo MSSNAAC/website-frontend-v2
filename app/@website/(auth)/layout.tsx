@@ -1,5 +1,5 @@
 import { Auth } from "@/components/shared/auth";
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 
 type LayoutProps = PropsWithChildren<{}>;
 

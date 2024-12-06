@@ -8,7 +8,7 @@ import {
   Drawer,
   Flex,
   InputWrapper,
-  MantineThemeComponents,
+  type MantineThemeComponents,
   Menu,
   MultiSelect,
   NavLink,

@@ -1,14 +1,14 @@
 import {
   Box,
-  BoxProps,
+  type BoxProps,
   Button,
-  ButtonProps,
-  PolymorphicComponentProps,
+  type ButtonProps,
+  type PolymorphicComponentProps,
   Stack,
   Title,
 } from "@mantine/core";
 import Image from "next/image";
-import { ElementType } from "react";
+import type { ElementType } from "react";
 
 export type BtnProps<T extends ElementType = "a"> = ButtonProps & {
   href?: string;

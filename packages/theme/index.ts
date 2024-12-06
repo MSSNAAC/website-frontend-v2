@@ -1,4 +1,4 @@
-import { createTheme, DefaultMantineColor } from "@mantine/core";
+import { createTheme, type DefaultMantineColor } from "@mantine/core";
 
 import { breakpoints } from "./breakpoints";
 import { colors } from "./colors";

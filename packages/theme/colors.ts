@@ -1,4 +1,4 @@
-import { DefaultMantineColor, MantineColorsTuple } from "@mantine/core";
+import type { DefaultMantineColor, MantineColorsTuple } from "@mantine/core";
 
 type Colors = Partial<Record<DefaultMantineColor, MantineColorsTuple>>;
 

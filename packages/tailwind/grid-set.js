@@ -1,6 +1,6 @@
 import plugin from "tailwindcss/plugin";
 
-export const gridset = plugin(function ({ addUtilities }) {
+export const gridset = plugin(({ addUtilities }) => {
   addUtilities({
     ".grid-set": {
       display: "grid",

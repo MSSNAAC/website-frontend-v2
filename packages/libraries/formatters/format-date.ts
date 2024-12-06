@@ -1,4 +1,4 @@
-import dayjs, { ConfigType } from "dayjs";
+import dayjs, { type ConfigType } from "dayjs";
 import LocalizedFormat from "dayjs/plugin/localizedFormat";
 import relativeTime from "dayjs/plugin/relativeTime";
 

@@ -1,6 +1,6 @@
 "use clients";
 
-import { Anchor, AnchorProps } from "@mantine/core";
+import { Anchor, type AnchorProps } from "@mantine/core";
 import { usePathname } from "next/navigation";
 
 import clsx from "clsx";

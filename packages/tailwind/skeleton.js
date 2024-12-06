@@ -1,6 +1,6 @@
 import plugin from "tailwindcss/plugin";
 
-export const skeleton = plugin(function ({ theme, addComponents }) {
+export const skeleton = plugin(({ theme, addComponents }) => {
   addComponents({
     "@keyframes skeleton": theme("keyframes.skeleton"),
     ".skeleton": {

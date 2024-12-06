@@ -1,7 +1,7 @@
 "use client";
 
-import { Box, BoxProps } from "@mantine/core";
-import Image, { ImageProps } from "next/image";
+import { Box, type BoxProps } from "@mantine/core";
+import Image, { type ImageProps } from "next/image";
 import { forwardRef } from "react";
 
 type PictureProps = Omit<BoxProps, keyof ImageProps> &

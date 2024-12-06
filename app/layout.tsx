@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import { Providers } from "@/components/shared/providers";
-import { PropsWithChildren, ReactNode } from "react";
+import type { PropsWithChildren, ReactNode } from "react";
 
 import "@mantine/core/styles.layer.css";
 import "@mantine/dates/styles.layer.css";

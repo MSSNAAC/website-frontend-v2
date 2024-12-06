@@ -1,7 +1,7 @@
 import { MSSNLogo } from "@/icons/mssn-logo";
 import { Box, Flex, Stack } from "@mantine/core";
 
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 
 type AuthProps = PropsWithChildren<{}>;
 

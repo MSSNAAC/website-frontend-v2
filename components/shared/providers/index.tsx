@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 import { Bounce, ToastContainer } from "react-toastify";
 import { FavIcon } from "./favicon";

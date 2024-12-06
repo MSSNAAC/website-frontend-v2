@@ -47,14 +47,15 @@ export function Faqs() {
     <Box component='section' bg='#E6F1E6' id='faqs' className=' px-6 py-10 '>
       <Stack
         align='center'
-        className='mx-auto flex w-full gap-4 font-sans'
+        className='mx-auto flex w-full gap-4 font-jakarta'
         maw={MAX_SCREEN_WIDTH}
       >
         <div className='mb-6 w-fit'>
           <Title
             order={2}
             c='accent.11'
-            className='font-semibold pb-4 text-center text-3xl'
+            fw={600}
+            className='pb-4 text-center text-3xl'
           >
             FAQs
           </Title>
@@ -74,7 +75,7 @@ export function Faqs() {
               "w-8 h-8 flex items-center justify-center"
             ),
             content: "!p-0 max-w-[860px]",
-            panel: "rounded-xl p-5 font-sans",
+            panel: "rounded-xl p-5 font-jakarta",
             control: "bg-transparent",
           }}
           styles={{
@@ -92,9 +93,9 @@ export function Faqs() {
               <Accordion.Control>
                 <Title
                   order={3}
-                  fw={700}
+                  fw={600}
                   className={clsx(
-                    "line-clamp-1 text-base sm:line-clamp-none sm:w-full font-jakarta",
+                    "line-clamp-1 text-base sm:line-clamp-none sm:w-full font-sans",
                     { "line-clamp-none": value === faq.question }
                   )}
                 >
@@ -102,7 +103,9 @@ export function Faqs() {
                 </Title>
               </Accordion.Control>
               <Accordion.Panel component={Box}>
-                <Text component='article'>{faq.answer}</Text>
+                <Text component='article' fz={15} fw={400}>
+                  {faq.answer}
+                </Text>
               </Accordion.Panel>
             </Accordion.Item>
           ))}

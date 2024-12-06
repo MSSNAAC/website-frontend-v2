@@ -18,10 +18,10 @@
     color: var(--accent-8);
   }
   50% {
-    color: var(--accent-8);
+    color: var(--accent-9);
   }
   75% {
-    color: var(--accent-9);
+    color: var(--accent-8);
   }
   100% {
     color: var(--accent-10);

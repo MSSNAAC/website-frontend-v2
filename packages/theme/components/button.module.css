@@ -1,7 +1,7 @@
 .root {
+  font-family: "Plus_Jakarta_Sans", sans-serif;
   &[data-variant="gradient"] {
-    box-shadow:
-      0px -1px 0px 0px var(--accent-12, #203c25) inset,
+    box-shadow: 0px -1px 0px 0px var(--accent-12, #203c25) inset,
       0px 0px 0px 1px var(--accent-11, #2a7e3b),
       0px 1px 1px 0px var(--gray-5, #dfe2df) inset;
   }

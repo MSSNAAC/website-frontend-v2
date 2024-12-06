@@ -31,6 +31,7 @@ export function Newsletter() {
     <Stack
       component='section'
       px={18}
+      className='font-jakarta'
       style={{
         position: "relative",
         backgroundImage: `url("/images/black-stripe.png")`,
@@ -63,13 +64,13 @@ export function Newsletter() {
       >
         <Title
           order={2}
-          className='prose-3xl/bold sm:prose-5xl/bold'
+          className='prose-3xl/bold sm:prose-5xl/bold font-sans'
           style={{ letterSpacing: "0.1em" }}
         >
           MSSNAAC NEWSLETTER
         </Title>
 
-        <Text lh={1.5} maw={950} className='font-sans'>
+        <Text lh={1.5} maw={950}>
           Be the first to receive the updates of the quarterly happenings in the
           Area Council. Sign up here.
         </Text>

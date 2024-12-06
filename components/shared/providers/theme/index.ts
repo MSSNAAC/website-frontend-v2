@@ -13,6 +13,7 @@ export const theme = mergeThemeOverrides(mantineTheme, {
   headings: {
     fontFamily: "'Roslindale','Plus_Jakarta_Sans', sans-serif",
   },
+
   lineHeights: {
     xs: "1.00",
     sm: "1.15",

@@ -6,16 +6,16 @@ export function HeroSection() {
     <Stack
       align='center'
       ta='center'
-      className='py-52'
+      className='py-52 font-jakarta'
       maw={MAX_SCREEN_WIDTH}
       mx='auto'
       gap={40}
       px={18}
     >
       <Title
-        className='font-jakarta'
+        className='font-sans'
         order={2}
-        fw={700}
+        fw={600}
         fz={{
           base: 32,
           sm: 40,
@@ -41,7 +41,6 @@ export function HeroSection() {
         lh={1.5}
         maw={900}
         w='100%'
-        className='font-sans'
       >
         Explore the world of Muslim students striving on the path to ensure
         better stance for future generations, building the Ummah in the best

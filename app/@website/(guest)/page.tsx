@@ -1,5 +1,10 @@
-import { UnderConstruction } from "@/components/shared/interface/under-construction";
+import { Newsletter } from "@/components/website/newletter";
+import { Fragment } from "react";
 
 export default function Home() {
-  return <UnderConstruction />;
+  return (
+    <Fragment>
+      <Newsletter />
+    </Fragment>
+  );
 }

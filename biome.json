@@ -20,7 +20,7 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
+      "recommended": false,
       "suspicious": {
         "noConsole": {
           "level": "error",
@@ -29,12 +29,6 @@
           }
         },
         "noArrayIndexKey": {
-          "level": "off"
-        },
-        "noShadowRestrictedNames": {
-          "level": "off"
-        },
-        "noExplicitAny": {
           "level": "off"
         }
       }

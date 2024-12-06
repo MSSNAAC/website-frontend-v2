@@ -6,7 +6,7 @@ export function HeroSection() {
     <Stack
       align='center'
       ta='center'
-      className='py-52 font-jakarta'
+      className='py-60 font-jakarta'
       maw={MAX_SCREEN_WIDTH}
       mx='auto'
       gap={40}
@@ -29,9 +29,10 @@ export function HeroSection() {
             animation: "colorCycle 5s infinite",
           }}
         >
-          Community Of Formidable Conscious Muslims
+          Community Of <br className='hidden sm:inline-block' /> Formidable
+          Conscious Muslims, <br className='hidden sm:inline-block' />
         </span>
-        ,Living On The Right Path
+        Living On The Right Path
       </Title>
       <Text
         fz={{

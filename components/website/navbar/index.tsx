@@ -37,7 +37,7 @@ export function Navbar() {
   return (
     <Flex
       component='header'
-      className={clsx("w-full rounded-full border border-gray-2", {
+      className={clsx("w-full rounded-full border border-gray-2 ", {
         // "translate-y-0": isVisible,
         // "hidden -translate-y-full": !isVisible,
       })}
@@ -51,7 +51,7 @@ export function Navbar() {
       style={{
         backdropFilter: "blur(8px)",
         WebkitBackdropFilter: "blur(8px)",
-        backgroundColor: "rgba(245, 245, 245, 0.7)",
+        backgroundColor: "rgba(255, 255, 255, 0.7)",
         zIndex: 1000,
       }}
     >

@@ -1,5 +1,5 @@
+import { Flex, type FlexProps } from "@mantine/core";
 import { Picture } from "../picture";
-import { BoxProps, Flex, type FlexProps, StackProps } from "@mantine/core";
 
 interface EmblemProps extends FlexProps {
   image?: string;
@@ -12,14 +12,14 @@ export function Emblem({ image, name, skeleton, ...props }: EmblemProps) {
 
   return (
     <Flex
-      c="gray.12"
+      c='gray.12'
       hidden={noOrganizationInfo}
-      align="center"
-      justify="center"
+      align='center'
+      justify='center'
       gap={3}
       {...props}
     >
-      <Picture alt={name} hidden={!image} h="100%" src={image} mih={85} />
+      <Picture alt={name} hidden={!image} h='100%' src={image} mih={85} />
     </Flex>
   );
 }

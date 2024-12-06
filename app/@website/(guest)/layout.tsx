@@ -9,23 +9,22 @@ type LayoutProps = PropsWithChildren;
 export default function Layout({ children }: LayoutProps) {
   return (
     <Fragment>
-      <div className='relative min-h-screen'>
+      <Box className='relative min-h-screen' component='section'>
         <Box
+          component='figure'
           className='absolute inset-0 bg-cover'
           style={{
             backgroundImage: "url('/images/random-mosque-banner.jpeg')",
             // backgroundAttachment: "fixed",
           }}
         />
-
-        <Box className='absolute inset-0 bg-white/90' />
-
-        <div className='relative z-10'>
+        <Box className='absolute inset-0 bg-white/90' component='figure' />
+        <Box className='relative z-10' component='section'>
           <Navbar />
           {children}
           <WebsiteFooter />
-        </div>
-      </div>
+        </Box>
+      </Box>
     </Fragment>
   );
 }

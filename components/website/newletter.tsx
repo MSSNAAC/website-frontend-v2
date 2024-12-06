@@ -57,9 +57,8 @@ export function Newsletter() {
         align='center'
         justify='center'
         c='white'
-        mt={10}
         gap={30}
-        mih={450}
+        mih={500}
         style={{ zIndex: 2 }}
       >
         <Title
@@ -76,6 +75,7 @@ export function Newsletter() {
         </Text>
 
         <TextInput
+          mt={10}
           required
           {...form.getInputProps("email")}
           placeholder='example@mssnaac.org'

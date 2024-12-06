@@ -37,20 +37,20 @@ export function Navbar() {
   return (
     <Flex
       component='header'
-      className={clsx("w-full rounded-full border border-gray-2 ", {
+      className={clsx("w-full rounded-full ", {
         // "translate-y-0": isVisible,
         // "hidden -translate-y-full": !isVisible,
       })}
       justify={{ base: "space-evenly", lg: "space-between" }}
       align='center'
-      top={25}
+      top={35}
       pos='sticky'
       mx='auto'
       maw={900}
       mih={65}
       style={{
-        backdropFilter: "blur(8px)",
-        WebkitBackdropFilter: "blur(8px)",
+        backdropFilter: "blur(18px)",
+        WebkitBackdropFilter: "blur(18px)",
         backgroundColor: "rgba(255, 255, 255, 0.7)",
         zIndex: 1000,
       }}

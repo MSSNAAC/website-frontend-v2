@@ -4,7 +4,6 @@ import { APP } from "@/packages/libraries";
 import { Box, Button, PasswordInput, Stack, TextInput } from "@mantine/core";
 import { Form, useForm, yupResolver } from "@mantine/form";
 import { getCookie } from "cookies-next";
-import { toString } from "lodash";
 import { boolean, object, string } from "yup";
 
 const schema = object({
@@ -16,7 +15,7 @@ const schema = object({
 });
 
 export default function Page() {
-  const email = toString(getCookie(APP.EMAIL));
+  const email = getCookie(APP.EMAIL)?.toString() ?? "";
 
   const form = useForm({
     initialValues: {

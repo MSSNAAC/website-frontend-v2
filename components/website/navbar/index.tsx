@@ -3,7 +3,7 @@
 import { MSSNLogo } from "@/icons/mssn-logo";
 import { PAGES } from "@/packages/libraries";
 import { Burger, Button, Flex, Popover, Stack, Title } from "@mantine/core";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import clsx from "clsx";
 import Link from "next/link";
@@ -12,27 +12,27 @@ import NavItem from "./nav-item";
 export function Navbar() {
   const [opened, toggle] = useState(false);
 
-  const [isVisible, setIsVisible] = useState(true);
+  // const [isVisible, setIsVisible] = useState(true);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollTop = window.scrollY;
+  //     const windowHeight = window.innerHeight;
+  //     const documentHeight = document.documentElement.scrollHeight;
 
-      if (scrollTop + windowHeight >= documentHeight) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-    };
+  //     if (scrollTop + windowHeight >= documentHeight) {
+  //       setIsVisible(false);
+  //     } else {
+  //       setIsVisible(true);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
     <Flex

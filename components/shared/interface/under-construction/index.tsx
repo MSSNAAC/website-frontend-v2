@@ -10,7 +10,7 @@ export function UnderConstruction() {
       justify='center'
     >
       <section className='grid place-items-center px-6 py-20 lg:px-8 '>
-        <div className={`text-center`}>
+        <div className='text-center'>
           <Title
             fw={500}
             component='h2'

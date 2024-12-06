@@ -3,7 +3,7 @@ import { Box, Flex, Stack } from "@mantine/core";
 
 import type { PropsWithChildren } from "react";
 
-type AuthProps = PropsWithChildren<{}>;
+type AuthProps = PropsWithChildren;
 
 export function Auth({ children }: AuthProps) {
   return (

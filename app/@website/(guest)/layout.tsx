@@ -3,7 +3,7 @@ import { Navbar } from "@/components/website/navbar";
 
 import { Fragment, type PropsWithChildren } from "react";
 
-type LayoutProps = PropsWithChildren<{}>;
+type LayoutProps = PropsWithChildren;
 
 export default function Layout({ children }: LayoutProps) {
   return (

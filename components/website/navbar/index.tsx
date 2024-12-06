@@ -36,16 +36,16 @@ export function Navbar() {
 
   return (
     <Flex
-      component='header'
+      component="header"
       className={clsx("w-full rounded-full", {
         // "translate-y-0": isVisible,
         // "hidden -translate-y-full": !isVisible,
       })}
       justify={{ base: "space-evenly", lg: "space-between" }}
-      align='center'
+      align="center"
       top={25}
-      pos='sticky'
-      mx='auto'
+      pos="sticky"
+      mx="auto"
       maw={900}
       mih={65}
       style={{
@@ -56,10 +56,10 @@ export function Navbar() {
       }}
     >
       <Flex
-        justify='center'
-        align='center'
-        component='ul'
-        className=' font-sans hidden lg:flex'
+        justify="center"
+        align="center"
+        component="ul"
+        className=" font-sans hidden lg:flex"
         flex={1}
         gap={18}
       >
@@ -68,12 +68,12 @@ export function Navbar() {
         <NavItem item={{ label: "Blog", path: PAGES.BLOG }} />
       </Flex>
 
-      <Flex gap={12} align='center' component={Link} href={PAGES.WEBSITE}>
+      <Flex gap={12} align="center" component={Link} href={PAGES.WEBSITE}>
         <MSSNLogo />
         <Title
           order={2}
           fw={700}
-          className='hover:text-accent-10 text-accent-12'
+          className="hover:text-accent-10 text-accent-12"
         >
           MSSN AKINYELE
         </Title>
@@ -81,19 +81,19 @@ export function Navbar() {
 
       <Flex
         gap={18}
-        justify='center'
-        align='center'
-        component='ul'
-        className='hidden lg:flex'
+        justify="center"
+        align="center"
+        component="ul"
+        className="hidden lg:flex"
         flex={1}
       >
         <NavItem item={{ label: "Donate", path: PAGES.DONATE }} />
         <NavItem item={{ label: "Contact", path: PAGES.CONTACT }} />
         <Button
-          size='sm'
-          color='gray'
-          variant='outline'
-          className='font-jakarta'
+          size="sm"
+          color="gray"
+          variant="outline"
+          className="font-jakarta"
           fz={14}
           component={Link}
           href={PAGES.LOGIN}
@@ -103,7 +103,7 @@ export function Navbar() {
       </Flex>
 
       <Popover
-        radius='md'
+        radius="md"
         trapFocus={false}
         transitionProps={{
           transition: "pop-top-right",
@@ -119,23 +119,23 @@ export function Navbar() {
             WebkitBackdropFilter: "blur(8px)",
           },
         }}
-        position='bottom-end'
+        position="bottom-end"
         withArrow={false}
       >
         <Popover.Target>
           <Burger
-            hiddenFrom='lg'
+            hiddenFrom="lg"
             opened={opened}
             onClick={() => toggle(!opened)}
-            aria-label='Toggle navigation'
+            aria-label="Toggle navigation"
             transitionDuration={500}
-            className='relative'
-            size='md'
+            className="relative"
+            size="md"
           />
         </Popover.Target>
 
         <Popover.Dropdown
-          className='border rounded-lg shadow-2xl border-primary-border-subtle '
+          className="border rounded-lg shadow-2xl border-primary-border-subtle "
           miw={300}
         >
           <Stack gap={12} py={10}>
@@ -146,8 +146,8 @@ export function Navbar() {
             <NavItem item={{ label: "Contact", path: PAGES.CONTACT }} />
             <Button
               mt={10}
-              size='sm'
-              className='font-jakarta'
+              size="sm"
+              className="font-jakarta"
               fz={14}
               component={Link}
               href={PAGES.LOGIN}

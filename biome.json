@@ -27,6 +27,15 @@
           "options": {
             "allow": ["error", "warn"]
           }
+        },
+        "noArrayIndexKey": {
+          "level": "off"
+        },
+        "noShadowRestrictedNames": {
+          "level": "off"
+        },
+        "noExplicitAny": {
+          "level": "off"
         }
       }
     }

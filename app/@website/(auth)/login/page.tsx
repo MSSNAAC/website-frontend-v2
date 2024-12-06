@@ -33,19 +33,19 @@ export default function Page() {
   function handleSubmit() {}
 
   return (
-    <Stack gap={30} justify='stretch' flex={1}>
-      <h2 className='font-medium text-2xl text-center'>
+    <Stack gap={30} justify="stretch" flex={1}>
+      <h2 className="font-medium text-2xl text-center">
         Sign in to your account
       </h2>
-      <Box component={Form} form={form} onSubmit={handleSubmit} w='100%'>
+      <Box component={Form} form={form} onSubmit={handleSubmit} w="100%">
         <Stack gap={24}>
           <TextInput
-            placeholder='user@mssnaac.org'
-            label='Email Address'
+            placeholder="user@mssnaac.org"
+            label="Email Address"
             {...form.getInputProps("email")}
           />
           <PasswordInput
-            placeholder='**********'
+            placeholder="**********"
             styles={{
               label: {
                 display: "flex",
@@ -54,14 +54,14 @@ export default function Page() {
                 width: "100%",
               },
             }}
-            label='Password'
-            type='password'
+            label="Password"
+            type="password"
             {...form.getInputProps("password")}
           />
           <Button
-            type='submit'
+            type="submit"
             mt={30}
-            className='disabled:opacity-50 disabled:cursor-not-allowed'
+            className="disabled:opacity-50 disabled:cursor-not-allowed"
           >
             Proceed
           </Button>

@@ -519,5 +519,5 @@ export const typography = Object.assign(
   _6xl,
   _7xl,
   _8xl,
-  _9xl
+  _9xl,
 );

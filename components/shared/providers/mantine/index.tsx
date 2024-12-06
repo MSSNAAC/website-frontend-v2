@@ -13,13 +13,13 @@ interface MantineProviderProps {
 
 export function CustomMantineProvider({ children }: MantineProviderProps) {
   return (
-    <ThemeProvider defaultTheme='system' attribute='class'>
-      <ColorSchemeScript defaultColorScheme='light' />
+    <ThemeProvider defaultTheme="system" attribute="class">
+      <ColorSchemeScript defaultColorScheme="light" />
       {/*
         MantineProvider is a context provider that manages theme state
         and provides theme API to all components inside its subtree
       */}
-      <MantineProvider theme={theme} defaultColorScheme='light'>
+      <MantineProvider theme={theme} defaultColorScheme="light">
         {/*
             DirectionProvider is a context provider that manages direction state
             and provides direction API to all components inside its subtree

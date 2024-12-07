@@ -26,7 +26,7 @@ export function AlFaedah() {
           <PostCard key={index} />
         ))}
       </Box>
-      <Button>Vist Blog</Button>
+      <Button miw={200}>Vist Blog</Button>
     </Stack>
   );
 }

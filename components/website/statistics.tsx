@@ -20,7 +20,7 @@ export function Statistics() {
         className='border-b sm:border-b-0 sm:border-r w-full text-center  pb-10 sm:pb-0'
         flex={1}
       >
-        <Title order={2} fz={40} fw={600} className='font-sans' ref={ref}>
+        <Title order={2} fz={40} fw={700} className='font-sans' ref={ref}>
           <CountUp end={inViewport ? 1000 : 0} duration={3} /> +
         </Title>
         <Text>
@@ -35,7 +35,7 @@ export function Statistics() {
         className='border-b sm:border-b-0 sm:border-r w-full text-center  pb-10 sm:pb-0'
         flex={1}
       >
-        <Title order={2} fz={40} fw={600} className='font-sans ' ref={ref}>
+        <Title order={2} fz={40} fw={700} className='font-sans ' ref={ref}>
           <CountUp end={inViewport ? 100 : 0} duration={3} /> +
         </Title>
         <Text>
@@ -49,7 +49,7 @@ export function Statistics() {
         className='w-full text-center'
         flex={1}
       >
-        <Title order={2} fz={40} fw={600} className='font-sans' ref={ref}>
+        <Title order={2} fz={40} fw={700} className='font-sans' ref={ref}>
           <CountUp end={inViewport ? 10 : 0} duration={3} /> +
         </Title>
         <Text maw='min-content'>

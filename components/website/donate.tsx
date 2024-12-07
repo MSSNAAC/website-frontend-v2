@@ -6,7 +6,7 @@ import { PAGES } from "@/packages/libraries";
 
 import Link from "next/link";
 
-export function About() {
+export function Donate() {
   return (
     <Box component='section' bg='#E6F1E6' id='faqs' className=' px-6 py-16 '>
       <Flex
@@ -22,24 +22,24 @@ export function About() {
 
         <Stack gap={24} flex={1}>
           <Title order={2} fw={700} className='pb-4 text-center text-3xl'>
-            Who Are We?
+            Spend in the cause of Allah
           </Title>
           <Text fz={17}>
-            MSSN AKINYELE AREA COUNCIL, one of the area councils under Oyo Area
-            Unit is a unique blend of Higher Institution and Secondary school
-            Branches.
+            You want to give charity, but don't know how? Or you have not found
+            the right target?
           </Text>
           <Text fz={17}>
-            MSSN Akinyele Area Council, ensures unity and fosters brotherhood
-            through its active Coordination and Extramural classes.
+            Sow a seed for your akhirah and donate to the cause of Allah.
+            MSSNAAC is open to donations that help in the smooth and effective
+            running of our Projects, Students Welfare, events among others.
           </Text>
           <Text fz={17}>
-            MSSNAAC holds different programs and events to ensure an integration
-            of the spiritual, academic and self-development realm of all members
-            of the organization.
+            Your generosity will go a long way in ensuring the effective
+            coordination, effective planning and implementation and the
+            effective running of activities within the Area Council.
           </Text>
-          <Button component={Link} href={PAGES.ABOUT} maw={250} mt={10}>
-            Read More
+          <Button component={Link} href={PAGES.ABOUT} maw={200} mt={10}>
+            Donate
           </Button>
         </Stack>
       </Flex>

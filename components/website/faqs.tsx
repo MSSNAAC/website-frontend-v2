@@ -44,7 +44,7 @@ export function Faqs() {
   const [value, setValue] = useState<string | null>(null);
 
   return (
-    <Box component='section' bg='#E6F1E6' id='faqs' className=' px-6 py-10 '>
+    <Box component='section' bg='#E6F1E6' id='faqs' className=' px-6 py-16 '>
       <Stack
         align='center'
         className='mx-auto flex w-full gap-4 font-jakarta'

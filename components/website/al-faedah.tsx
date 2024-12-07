@@ -4,7 +4,7 @@ import { PostCard } from "../shared/interface/blog-card";
 
 export function AlFaedah() {
   return (
-    <Stack py={40} px={18} bg='white' justify='center' align='center'>
+    <Stack py={64} px={18} bg='white' justify='center' align='center'>
       <Title order={2} c='accent.11' fw={700} className='text-center text-3xl'>
         Al-Faedah Press
       </Title>

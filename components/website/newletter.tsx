@@ -63,10 +63,10 @@ export function Newsletter() {
       >
         <Title
           order={2}
-          className='prose-3xl/bold sm:prose-5xl/bold font-sans'
-          style={{ letterSpacing: "0.1em" }}
+          className='prose-3xl/bold sm:prose-5xl/bold font-sans space-x-4'
+          // style={{ letterSpacing: "0.1em" }}
         >
-          MSSNAAC NEWSLETTER
+          <span>MSSNAAC</span> <span>NEWSLETTER</span>
         </Title>
 
         <Text lh={1.5} maw={950}>

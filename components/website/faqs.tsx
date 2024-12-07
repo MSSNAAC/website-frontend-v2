@@ -54,7 +54,7 @@ export function Faqs() {
           <Title
             order={2}
             c='accent.11'
-            fw={600}
+            fw={700}
             className='pb-4 text-center text-3xl'
           >
             FAQs

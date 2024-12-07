@@ -84,7 +84,7 @@ export function Navbar() {
           <MSSNLogo />
           <Title
             order={2}
-            fw={500}
+            fw={600}
             className='hover:text-accent-10 text-accent-12 cursor-pointer'
           >
             MSSN AKINYELE

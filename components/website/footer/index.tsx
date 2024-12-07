@@ -10,6 +10,7 @@ import { LinkedinIcon } from "@/icons/linkedin";
 import { MSSNLogo } from "@/icons/mssn-logo";
 import { TwitterIcon } from "@/icons/twitter";
 import { MAX_SCREEN_WIDTH } from "@/packages/constants/size";
+import { Newsletter } from "../newletter";
 
 export function WebsiteFooter() {
   return (
@@ -20,6 +21,7 @@ export function WebsiteFooter() {
       component='footer'
       className='font-jakarta text-primary-text-body'
     >
+      <Newsletter />
       <Stack
         w='100%'
         maw={MAX_SCREEN_WIDTH}

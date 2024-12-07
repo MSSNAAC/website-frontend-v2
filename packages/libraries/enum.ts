@@ -26,7 +26,7 @@ export enum PAGES {
   ABOUT = "/about",
   BRANCHES = "/branches",
   BLOG = "/blog",
-  DONATE = "/donate",
+  DONATE = "/#donate",
   CONTACT = "/contact",
   LOGIN = "/login",
   NOT_FOUND = "/404",
@@ -34,7 +34,7 @@ export enum PAGES {
   PROJECTS = "/projects",
   DOWNLOADS = "/downloads",
   VOLUNTEER = "/volunteer",
-  FAQS = "/faqs",
+  FAQS = "/#faqs",
   PRIVACY_POLICY = "/privacy-policy",
   PRESS = "/press",
 }

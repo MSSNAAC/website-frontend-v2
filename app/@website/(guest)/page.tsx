@@ -3,7 +3,6 @@ import { AlFaedah } from "@/components/website/al-faedah";
 import { Donate } from "@/components/website/donate";
 import { Faqs } from "@/components/website/faqs";
 import { HeroSection } from "@/components/website/hero";
-import { Newsletter } from "@/components/website/newletter";
 import { Projects } from "@/components/website/projects";
 import { Statistics } from "@/components/website/statistics";
 
@@ -19,7 +18,6 @@ export default function Home() {
       <Donate />
       <AlFaedah />
       <Faqs />
-      <Newsletter />
     </Fragment>
   );
 }

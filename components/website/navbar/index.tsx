@@ -64,7 +64,7 @@ export function Navbar() {
         style={{
           backdropFilter: "blur(18px)",
           WebkitBackdropFilter: "blur(18px)",
-          backgroundColor: "rgba(255, 255, 255, 0.7)",
+          backgroundColor: "rgba(245, 245, 245, 0.7)",
         }}
       >
         <Flex

@@ -6,7 +6,7 @@ export function HeroSection() {
     <Stack
       align='center'
       ta='center'
-      className='py-48 sm:py-60 font-jakarta'
+      className='pb-48 pt-36 xl:py-60  font-jakarta'
       maw={MAX_SCREEN_WIDTH}
       mx='auto'
       gap={40}

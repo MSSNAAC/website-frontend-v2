@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export function Donate() {
   return (
-    <Box component='section' bg='#E6F1E6' id='faqs' className=' px-6 py-16 '>
+    <Box component='section' bg='#E6F1E6' id='donate' className=' px-6 py-16 '>
       <Flex
         align='center'
         justify='center'

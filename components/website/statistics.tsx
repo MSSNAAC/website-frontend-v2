@@ -52,9 +52,8 @@ export function Statistics() {
         <Title order={2} fz={40} fw={700} className='font-sans' ref={ref}>
           <CountUp end={inViewport ? 10 : 0} duration={3} /> +
         </Title>
-        <Text maw='min-content'>
-          Active
-          <br className='hidden sm:inline' />
+        <Text>
+          Active <br className='hidden sm:inline' />
           branches
         </Text>
       </Stack>

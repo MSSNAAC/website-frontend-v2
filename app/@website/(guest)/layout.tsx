@@ -18,7 +18,7 @@ export default function Layout({ children }: LayoutProps) {
             // backgroundAttachment: "fixed",
           }}
         />
-        <Box className='absolute inset-0 bg-white/90' component='figure' />
+        <Box className='absolute inset-0 bg-white/80' component='figure' />
         <Box className='relative z-10' component='section'>
           <Navbar />
           {children}

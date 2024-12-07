@@ -1,3 +1,4 @@
+import { AlFaedah } from "@/components/website/al-faedah";
 import { Faqs } from "@/components/website/faqs";
 import { HeroSection } from "@/components/website/hero";
 import { Newsletter } from "@/components/website/newletter";
@@ -10,6 +11,7 @@ export default function Home() {
     <Fragment>
       <HeroSection />
       <Statistics />
+      <AlFaedah />
       <Faqs />
       <Newsletter />
     </Fragment>

@@ -24,10 +24,10 @@ export default function NavItem({ item, ...props }: NavItemProps) {
     <Anchor
       component={Link}
       href={path}
-      variant="hover"
-      w="fit-content"
+      variant='hover'
+      w='fit-content'
       fz={14}
-      className={clsx("text-gray-10 py-2 capitalize font-jakarta", {
+      className={clsx("text-gray-12 py-2 capitalize font-jakarta", {
         "text-primary": isActive,
       })}
       {...props}

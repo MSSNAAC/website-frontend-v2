@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import Image from "next/image";
 import Link from "next/link";
 
 import { Box, Center, Divider, Flex, Stack, Text } from "@mantine/core";
@@ -7,10 +8,9 @@ import { FOOTER_LINKS } from "./links";
 import { FacebookIcon } from "@/icons/facebook";
 import { InstagramIcon } from "@/icons/instagram";
 import { LinkedinIcon } from "@/icons/linkedin";
-import { MSSNLogo } from "@/icons/mssn-logo";
 import { TwitterIcon } from "@/icons/twitter";
 import { MAX_SCREEN_WIDTH } from "@/packages/constants/size";
-import { Newsletter } from "../newletter";
+import { Newsletter } from "../home/newletter";
 
 export function WebsiteFooter() {
   return (
@@ -52,7 +52,12 @@ export function WebsiteFooter() {
               component='figure'
               className='rounded-2xl w-fit'
             >
-              <MSSNLogo />
+              <Image
+                src='/images/mssn-logo.png'
+                alt='MSSN Logo'
+                width={40}
+                height={30}
+              />
             </Box>
             <Text fz={15} className='text-center sm:text-left'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero,

@@ -3,7 +3,7 @@
 import { Avatar, Card, Flex, Text, Title } from "@mantine/core";
 import clsx from "clsx";
 import { Heart, Message } from "iconsax-react";
-import { Picture } from "../picture";
+import { Picture } from "../../picture";
 
 const post = {
   title:

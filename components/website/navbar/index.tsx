@@ -1,6 +1,5 @@
 "use client";
 
-import { MSSNLogo } from "@/icons/mssn-logo";
 import { PAGES } from "@/packages/libraries";
 import {
   Box,
@@ -13,6 +12,7 @@ import {
 } from "@mantine/core";
 import { useEffect, useState } from "react";
 
+import { MSSNLogo } from "@/icons/mssn-logo";
 import clsx from "clsx";
 import Link from "next/link";
 import NavItem from "./nav-item";
@@ -57,14 +57,14 @@ export function Navbar() {
         mih={65}
         justify={{ base: "space-evenly", lg: "space-between" }}
         align='center'
-        className={clsx("w-full rounded-full ", {
+        className={clsx("w-full rounded-full  border-gray-2 ", {
           "translate-y-0": isVisible,
           "hidden -translate-y-full": !isVisible,
         })}
         style={{
           backdropFilter: "blur(18px)",
           WebkitBackdropFilter: "blur(18px)",
-          backgroundColor: "rgba(245, 245, 245, 0.7)",
+          backgroundColor: "rgba(248, 248, 248, 0.7)",
         }}
       >
         <Flex
@@ -81,7 +81,10 @@ export function Navbar() {
         </Flex>
 
         <Flex gap={12} align='center' component={Link} href={PAGES.WEBSITE}>
-          <MSSNLogo />
+          <Box>
+            <MSSNLogo />
+          </Box>
+
           <Title
             order={2}
             fw={600}
@@ -103,7 +106,7 @@ export function Navbar() {
           <NavItem item={{ label: "Contact", path: PAGES.CONTACT }} />
           <Button
             size='sm'
-            color='gray'
+            color='gray.10'
             variant='outline'
             className='font-jakarta'
             fz={14}

@@ -12,6 +12,7 @@ export enum APP {
   USER_TYPE = "uType",
   EMAIL = "eMail",
   USER_ID = "uID",
+  EXPANDED_NAVBAR = "edNav",
 }
 
 export enum USER_TYPE {
@@ -23,6 +24,7 @@ export enum USER_TYPE {
 export enum PAGES {
   WEBSITE = "/",
   DASHBOARD = "/dashboard",
+  PROFILE = "/profile",
   ABOUT = "/about",
   BRANCHES = "/branches",
   BLOG = "/blog",

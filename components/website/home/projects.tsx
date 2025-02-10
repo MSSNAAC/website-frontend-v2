@@ -4,7 +4,7 @@ import { MAX_SCREEN_WIDTH } from "@/packages/constants/size";
 import { Box, Button, Stack, Text, Title } from "@mantine/core";
 
 import clsx from "clsx";
-import { Picture } from "../shared/interface/picture";
+import { Picture } from "../../shared/interface/picture";
 
 export function Projects() {
   return (
@@ -19,8 +19,8 @@ export function Projects() {
       <Title
         order={2}
         c='accent.11'
-        fw={700}
-        className='text-center text-3xl font-sans'
+        fw={600}
+        className='text-center text-4xl font-sans'
       >
         Our Projects
       </Title>

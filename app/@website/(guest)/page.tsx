@@ -1,10 +1,10 @@
-import { About } from "@/components/website/about";
-import { AlFaedah } from "@/components/website/al-faedah";
-import { Donate } from "@/components/website/donate";
-import { Faqs } from "@/components/website/faqs";
-import { HeroSection } from "@/components/website/hero";
-import { Projects } from "@/components/website/projects";
-import { Statistics } from "@/components/website/statistics";
+import { Statistics } from "@/components/website/about/statistics";
+import { About } from "@/components/website/home/about";
+import { AlFaedah } from "@/components/website/home/al-faedah";
+import { Donate } from "@/components/website/home/donate";
+import { Faqs } from "@/components/website/home/faqs";
+import { HeroSection } from "@/components/website/home/hero";
+import { Projects } from "@/components/website/home/projects";
 
 import { Fragment } from "react";
 

@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 
 import { Providers } from "@/components/shared/providers";
+import { getUserType } from "@/packages/actions";
+import { USER_TYPE } from "@/packages/libraries";
 import type { PropsWithChildren, ReactNode } from "react";
 
 import "@mantine/core/styles.layer.css";
 import "@mantine/dates/styles.layer.css";
 import "@mantine/spotlight/styles.layer.css";
 
+import "leaflet/dist/leaflet.css";
 import "react-toastify/dist/ReactToastify.css";
 
-import { getUserType } from "@/packages/actions";
-import { USER_TYPE } from "@/packages/libraries";
 import "@/packages/variables/index.css";
 import "@/styles/accent.scss";
 import "@/styles/index.css";
@@ -37,11 +38,11 @@ export default async function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang='en'>
       <body>
-        <main className="scrollbar-none">
+        <main className='scrollbar-none'>
           <Providers>
-            <div className="flex h-full flex-col">
+            <div className='flex h-full flex-col'>
               {children}
               {view[userType]}
             </div>

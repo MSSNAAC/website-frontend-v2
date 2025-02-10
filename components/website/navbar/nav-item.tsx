@@ -28,7 +28,7 @@ export default function NavItem({ item, ...props }: NavItemProps) {
       w='fit-content'
       fz={14}
       className={clsx("text-gray-12 py-2 capitalize font-jakarta", {
-        "text-primary": isActive,
+        "text-accent-10 font-semibold": isActive,
       })}
       {...props}
     >

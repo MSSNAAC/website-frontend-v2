@@ -1,9 +1,10 @@
 "use client";
 
+import Link from "next/link";
+
 import { MAX_SCREEN_WIDTH } from "@/packages/constants/size";
 import { Button, Flex, Stack, Text, Title } from "@mantine/core";
 import { LatLngTuple } from "leaflet";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 
@@ -98,9 +99,8 @@ export function HeroSection() {
       </Text>
 
       <MapContainer
-        zoomControl
         zoom={14}
-        maxZoom={18}
+        scrollWheelZoom={false}
         style={{
           height: 500,
           width: "100%",
